@@ -31,6 +31,7 @@ dist: clean
 	rm -rf slock-${VERSION}
 
 install: all
+	rm config.h
 	mkdir -p ${DESTDIR}${PREFIX}/bin
 	cp -f slock ${DESTDIR}${PREFIX}/bin
 	chmod 755 ${DESTDIR}${PREFIX}/bin/slock
